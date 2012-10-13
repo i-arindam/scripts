@@ -28,10 +28,7 @@ ids = @dbh.query(all_ids)
 clear_table = "TRUNCATE #{table_to_read_from}"
 @dbh.query(clear_table)
 
-id_set = []
+
 ids.each do |row|
-  id_set.push(row[0].to_i)
+  puts row[0].to_i
 end
-
-
-solr.delete_by_id(id_set)
