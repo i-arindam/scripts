@@ -1,0 +1,18 @@
+table: remove_user_from_searches
+
+development:
+  db:
+    database: aapaurmain_development
+    username: root
+    password: root123
+    host: localhost
+    port: 3306
+  log: /Users/achakrab/consume_search_removal.log
+
+production:
+  db:
+    database: aapaurmain_production
+    username: maindbadmin
+    password: crackitin123
+    host: 108.163.188.202
+  log: /home/aapaurmain/scripts/shared/log/consume_search_removal.log
