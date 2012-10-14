@@ -1,0 +1,11 @@
+app_env_file: '../../aapaurmain/config/environment'
+column: recommended_user_ids
+monday_log: /Users/achakrab/send_mails_monday.log
+wednesday_log: /Users/achakrab/send_mails_wednesday.log
+friday_log: /Users/achakrab/send_mails_friday.log
+db:
+  host: localhost
+  username: root
+  password: root123
+  database: aapaurmain_development
+

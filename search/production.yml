@@ -1,0 +1,23 @@
+add_table: remove_users_from_searches
+remove_table: add_users_to_searches
+
+remove_log: /home/aapaurmain/scripts/capped/shared/log/consume_search_removal.log
+add_log: /home/aapaurmain/scripts/capped/shared/log/consume_search_add.log
+
+db:
+  database: aapaurmain_production
+  username: maindbadmin
+  password: crackitin123
+  host: 108.163.188.202
+
+cols:
+  -name
+  -family_preference
+  -spouse_preference
+  -further_education_plans
+  -settle_else
+  -sexual_preference
+  -virginity_opinion
+  -profession
+  -dream_for_future
+  -settled_in

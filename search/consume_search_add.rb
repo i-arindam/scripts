@@ -12,18 +12,20 @@ require '../lib/database'
 
 env = ARGV.first || 'production'
 
-config = YAML.load_file(File.join(working_dir, 'search_add.yml'))
+config = YAML.load_file(File.join(working_dir, "#{env}.yml"))
 
-table_to_read_from = config['table']
-db_conf = config[env]['db']
+table_to_read_from = config['add_table']
+db_conf = config['db']
 
-Database.logger = Logger.new(config[env]['log'])
+Database.logger = Logger.new(config['add_log'])
 @dbh = Database.new(db_conf)
 
 columns = config['cols']
 
 all_users = "SELECT #{columns.join(", ")} FROM #{table_to_read_from}"
 users = @dbh.query(all_users)
+
+exit if users.nil?
 
 clear_table = "TRUNCATE #{table_to_read_from}"
 @dbh.query(clear_table)

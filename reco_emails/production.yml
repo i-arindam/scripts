@@ -1,0 +1,11 @@
+app_env_file: '../../../app/config/environment'
+column: recommended_user_ids
+monday_log: '/home/aapaurmain/scripts/capped/shared/log/send_mails_monday.log'
+wednesday_log: '/home/aapaurmain/scripts/capped/shared/log/send_mails_wednesday.log'
+friday_log: '/home/aapaurmain/scripts/capped/shared/log/send_mails_friday.log'
+db:
+  database: aapaurmain_production
+  username: maindbadmin
+  password: crackitin123
+  host: 108.163.188.202
+

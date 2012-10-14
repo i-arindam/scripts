@@ -1,0 +1,23 @@
+add_table: remove_users_from_searches
+remove_table: add_users_to_searches
+
+remove_log: /Users/achakrab/consume_search_removal.log
+add_log: /Users/achakrab/consume_search_add.log
+
+db:
+  database: aapaurmain_development
+  username: root
+  password: root123
+  host: localhost
+
+cols:
+  -name
+  -family_preference
+  -spouse_preference
+  -further_education_plans
+  -settle_else
+  -sexual_preference
+  -virginity_opinion
+  -profession
+  -dream_for_future
+  -settled_in
