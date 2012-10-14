@@ -36,4 +36,4 @@ users.each do |row|
 end
 
 
-solr.add docs_to_add
+solr.add docs_to_add, :add_attributes => {:commitWithin => 2}

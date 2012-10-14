@@ -35,3 +35,5 @@ end
 
 
 solr.delete_by_id(id_set)
+solr.commit
+
