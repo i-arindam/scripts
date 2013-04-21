@@ -1,0 +1,6 @@
+db:
+  host: localhost
+  username: root
+  password: root123
+  database: aapaurmain_development
+
